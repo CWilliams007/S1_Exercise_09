@@ -117,6 +117,8 @@
                 <label for="vist">Date of visit</label>
                 <input type="date" name="visitdate" id="vist">
 
+
+
                 <div class="formrow">
                     <label for="order">Order type</label>
                     <select name="orertType" id="order">
@@ -129,12 +131,14 @@
 
                 <div class="formrow">
                     <label for="dish">What's your favorite dish?</label>
-                    <select id="dishType">
-                        <option value="Bbq">bbq</option>
-                        <option value="bbq">bbq</option>
-                        <option value="bbq">bbq</option>
-                        <option value="bbq">bbq</option>
-                    </select>
+                    <input type="text" name="favDish" id="dish" list="dishType">
+                    <datalist id="dishType">
+                        <option value="Meditararenan Pizza"></option>
+                        <option value="Pineapple Pizza"></option>
+                        <option value="Terrible Pizza"></option>
+                        <option value="Pesto Rolls"></option>
+                        <option value="Pasta Artichoke Pizza"></option>
+                    </datalist>
                 </div>
 
 
@@ -178,6 +182,11 @@
                 <br>
                 <textarea name="custExp" id="commBox" cols="30" rows="10"></textarea>
             </fieldset>
+
+            <div id="buttons">
+                <input type="submit" value="Submit My Survey">
+                <input type="reset" value="Cancel">
+            </div>
 
 
 
